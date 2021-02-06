@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`example-typescript should render correct snapshot 1`] = `
+exports[`example-javascript should render correct snapshot 1`] = `
 <example-javascript>
   #shadow-root(open)
     <p>

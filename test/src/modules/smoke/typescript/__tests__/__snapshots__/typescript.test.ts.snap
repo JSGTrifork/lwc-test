@@ -11,5 +11,11 @@ exports[`example-typescript should render correct snapshot 1`] = `
       TypeScript
        has worked.
     </p>
+    <smoke-sub>
+      #shadow-root(open)
+        <div>
+          TypeScript
+        </div>
+    </smoke-sub>
 </example-typescript>
 `;
