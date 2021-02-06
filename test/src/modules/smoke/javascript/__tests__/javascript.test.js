@@ -5,9 +5,9 @@
  * For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/MIT
  */
 import { createElement } from 'lwc';
-import TypeScript from '../typescript';
+import JavaScript from '../javascript';
 
-describe('example-typescript', () => {
+describe('example-javascript', () => {
     afterEach(() => {
         while (document.body.firstChild) {
             document.body.removeChild(document.body.firstChild);
@@ -15,17 +15,17 @@ describe('example-typescript', () => {
     });
 
     it('should render correct snapshot', () => {
-        const element = createElement('example-typescript', { is: TypeScript });
+        const element = createElement('example-javascript', { is: JavaScript });
         
         document.body.appendChild(element);
-        element.targetLanguage = "TypeScript";
+        element.targetLanguage = "JavaScript";
         return Promise.resolve().then(() => {
             expect(element).toMatchSnapshot();
         })
     });
 
     it('renders two p tags', () => {
-        const element = createElement('example-foo', { is: TypeScript });
+        const element = createElement('example-foo', { is: JavaScript });
         document.body.appendChild(element);
         const elementsP = element.shadowRoot.querySelectorAll('p');
         expect(elementsP).toHaveLength(2);
@@ -33,7 +33,7 @@ describe('example-typescript', () => {
 
     it('renders dynamic text correctly in the 2nd p tag', () => {
         const message = 'Validating if the transformation to TypeScript has worked.';
-        const element = createElement('example-foo', { is: TypeScript });
+        const element = createElement('example-foo', { is: JavaScript });
         element.targetLanguage = "TypeScript";
         document.body.appendChild(element);
         const elementP = element.shadowRoot.querySelectorAll('p')[1];

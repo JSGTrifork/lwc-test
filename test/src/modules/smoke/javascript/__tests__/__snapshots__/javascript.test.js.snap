@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`example-typescript should render correct snapshot 1`] = `
+<example-javascript>
+  #shadow-root(open)
+    <p>
+      example-javascript
+    </p>
+    <p>
+      Validating if the transformation to 
+      JavaScript
+       has worked.
+    </p>
+    <smoke-subjs>
+      #shadow-root(open)
+        <div>
+          JavaScript
+        </div>
+    </smoke-subjs>
+</example-javascript>
+`;

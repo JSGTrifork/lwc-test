@@ -6,8 +6,8 @@
  */
 import { LightningElement, api } from 'lwc';
 
-export default class TypeScript extends LightningElement {
-    _targetLanguage: string;
+export default class JavaScript extends LightningElement {
+    _targetLanguage;
 
     @api
     get targetLanguage() {
@@ -18,7 +18,4 @@ export default class TypeScript extends LightningElement {
         this._targetLanguage = val;
     }
 
-    connectedCallback() {
-        //this.targetLanguage = 'TypeScript';
-    }
 }
